@@ -1,0 +1,279 @@
+* {margin: 0; padding: 0}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+header {
+    height: 4.6rem;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    line-height: 4.6rem;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 2.3rem;
+    display: inline-block;
+}
+
+.nav li .subnav {
+    background-color: white;
+    opacity: 0;
+}
+
+.nav li .subnav li a {
+    text-transform: unset;
+    color: #000;
+    padding: 0 6rem 0 2rem;
+}
+
+.nav li a:hover { 
+    background-color: #ccc;
+    color: #000;
+}
+
+.nav li:hover .subnav {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+}
+
+.slider .slide01 {
+    margin-top: 4.6rem;
+    position: relative;
+    z-index: -999;
+}
+
+.slider .slide01 .content-slide {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    bottom: 5rem;
+    color: #fff;
+}
+.slider .content-slide h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.box1, .box3 {
+    width: 77rem;
+    margin: auto;
+    text-align: center;
+    padding: 6.4rem 1.6rem;
+}
+
+.box1 h2, .box2 h2, .box3 h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.box1 p, .box3 p{
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.box1 .content {
+    text-align: justify;
+    font-style: normal;
+} 
+
+.box1 section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 section article {
+    width: 15rem;
+
+}
+
+.box2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.box2 .container {
+    width: 77rem;
+    margin: auto;
+    text-align: center;
+    padding: 6.4rem 1.6rem;
+}
+
+.box2 p {
+    margin: 2rem 0;
+    font-style: italic;   
+}
+
+.box2 .content {
+    margin-top: 3rem;
+    list-style-type: none;
+    background-color: #fff;
+    text-align: left;
+}
+
+.box2 .content li {
+    color: #000;
+    padding: 1rem 2rem;
+    opacity: .8;
+}
+
+.box2 .content li span {
+    color: #fff;
+    background-color: #FF2C16;
+    padding: 0.4rem 0.8rem;
+    margin-left: 2rem;
+}
+
+.box2 .content li .number {
+    color: #fff;
+    background-color: #000;
+    padding: 0 0.8rem;
+    border-radius: 20rem;
+    float: right;
+    margin-right: 1.6rem;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+.box2 section {
+    display: flex;
+    margin-top: 3.2rem;
+    color: #000;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.box2 section article {
+    background-color: #fff;
+    width: 24.5rem;
+}
+
+.box2 section article .second {
+    padding: 1.5rem;
+}
+
+.box2 section article h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.box2 section article p {
+    font-style: normal;
+}
+
+.box2 section article button,  .box3 .contact .right button {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+
+.box3 .contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.box3 .contact .left p {
+    font-size: 1.8rem;
+    font-style: normal;
+    text-align: left;
+    line-height: 0.5;
+}
+
+.box3 .contact .right{
+   text-align: right;
+   width: 40rem;
+}
+
+.box3 .contact .right input {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+}
+
+.box3 .contact .right button {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.block {
+    display: block;
+    width: 94%;
+}
+
+.half {
+    width: 47%;
+    float: left;
+    padding-left: 1rem;
+}
+
+.full {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.box4 {
+    width: 100%;
+    height: 83rem;
+    background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    filter: grayscale(50%)
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    opacity: .6;
+    padding-bottom: 7rem;
+}
