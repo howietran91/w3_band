@@ -1,6 +1,7 @@
 * {margin: 0; padding: 0}
 
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -94,6 +95,7 @@ img {
 
 .box1, .box3 {
     width: 77rem;
+    max-width: 100%;
     margin: auto;
     text-align: center;
     padding: 6.4rem 1.6rem;
